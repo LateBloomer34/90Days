@@ -4,14 +4,14 @@ using namespace std ;
 int reverseNum(int num){
     int rem = 0 ;
     int revNum = 0;
-    if (num>9){. // if number is greater than 9
+    if (num>1){ // if number is greater than 1
     while (num > 0 ){
         rem = num%10;
         revNum = revNum*10+rem;
         num = num/10;
     }
 }
-else if (num<-9){ //if number is lesser than 9
+else if (num<-1){ //if number is lesser than 1
     while (num < 0 ){
         rem = num%10;
         revNum = revNum*10+rem;
