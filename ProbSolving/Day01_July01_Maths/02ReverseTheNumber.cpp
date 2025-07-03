@@ -21,7 +21,6 @@ else if (num<-1){ //if number is lesser than 1
 else { //number between -9 to  9
     return num;
 }
-
     return revNum;
 }
 
