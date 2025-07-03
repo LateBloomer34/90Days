@@ -5,7 +5,7 @@ vector<int> divisor(int num){
     vector<int>div;
     for (int i = 1 ; i <= num ; i++){
         if (num%i==0){
-            div.push_back(i);
+        div.push_back(i);
         }
     }
     return div;
