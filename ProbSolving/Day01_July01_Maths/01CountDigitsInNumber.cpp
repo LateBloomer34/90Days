@@ -10,7 +10,7 @@ int countNum(int num){
     }
 }
 else if (num<0){
-    while(num<0){
+    while(num<0){ 
     count++;
     num = num/10;
 }
