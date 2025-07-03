@@ -36,7 +36,5 @@ int main (){
    else{                // if orignal number is not equals to reverse number
        cout<<"not pelindrome";
    }
-   
+  
 }
-
-
