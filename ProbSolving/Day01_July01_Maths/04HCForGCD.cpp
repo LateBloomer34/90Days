@@ -30,7 +30,6 @@ else{
     num2 = num2 % num1;
 }
 }
-
 return max(num1, num2);
 }
 
