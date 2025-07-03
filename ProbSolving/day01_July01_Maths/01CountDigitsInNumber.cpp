@@ -26,5 +26,4 @@ int main (){
     cout<<"enter the number:- ";
     cin>>num;
     cout<<countNum(num);
-    // cout<<num/10;
 }
