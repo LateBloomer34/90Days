@@ -9,7 +9,6 @@ int arms(int num){
         count++;
         num = num/10;
     }
-    
      int arm = 0 ;
      while(orgNum>0){
         int rem = orgNum%10;
