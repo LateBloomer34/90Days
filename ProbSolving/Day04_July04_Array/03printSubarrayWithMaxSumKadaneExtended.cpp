@@ -9,21 +9,17 @@ int maxSubarraySum(vector<int>arr){
     int sum = 0 ;
     int maxsum = arr[0];
     int n = arr.size();
-
     int start = 0;
     int end = 0 ;
-    int tempStart=0;
-    vector<int> resultArr;
+
     for(int i= 0 ; i < n ; i++){
         sum = sum + arr[i];
-        
         // maxsum = max(maxsum, sum);
-     if (sum>maxsum){  // find maxSum and end point
+        if (sum>maxsum){  // find maxSum and end point
         maxsum = sum;
         end = i;
-        
      }
-        if (sum<0){
+        if (sum<=0){
             sum = 0 ;
             start = i+1;  // find start point
         }
