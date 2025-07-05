@@ -31,6 +31,6 @@ int buy_Sell_Stock(vector<int>arr){
 }
 
 int main (){
-    vector<int>arr = {7,1,5,3,6,4};
+    vector<int>arr = {7,2,5,3,6,1,4};
     cout<<buy_Sell_Stock(arr);
 }
