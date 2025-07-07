@@ -1,26 +1,21 @@
 #include<iostream>
 using namespace std;
 
-int maxProfit(vector<int>arr){
-        int n = arr.size();
-        int profit = arr[0];
-        int maxPro = 0;
-        if (n <= 1){
-            maxPro =  profit;
-        }
-        else{
-        for (int i = 1 ; i < n ; i++){
-            profit = profit*arr[i];
-            if (profit ==0){
-                profit = arr[i];
-            }
-            maxPro = max(maxPro, profit);
+int product (vector<int>arr){
+    int n = arr.size();
+    int product =1;
+    int maxProduct = arr[0];
+    for (int i = 0 ; i < n ; i++){
+        product = product*arr[i];
+        maxProduct = max(product , maxProduct);
+        if (product==0){
+            product = 1;
         }
     }
-return maxPro;
+return maxProduct;
 }
 
 int main (){
     vector<int>arr = {1,2,-3,0,-4,-5};
-    cout<<maxProfit(arr);
+    cout<<product(arr);
 }
