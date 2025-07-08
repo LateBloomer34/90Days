@@ -2,13 +2,13 @@
 using namespace std;
 
 int rotate(vector<vector<int>>arr){
-    int n = arr.size();
-    int m = arr[0].size();
+    int n = arr.size(); // size of row
+    int m = arr[0].size();  // size of coloumn of giben array
     // cout<<n<<endl;
     // cout<<m<<endl;
-    for (int i = 0 ; i < m ; i++){
-        for (int j = 0 ; j<n ; j++){
-            cout<<arr[j][i];
+    for (int i = 0 ; i < n ; i++){
+        for (int j = 0 ; j<m ; j++){
+            cout<<arr[i][j]<<" ";
         }
         cout<<endl;
     }
