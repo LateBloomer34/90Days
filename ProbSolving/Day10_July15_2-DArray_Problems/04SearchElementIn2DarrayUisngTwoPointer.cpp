@@ -2,12 +2,12 @@
 using namespace std;
 
 pair<int ,int> findEle(vector<vector<int>>arr, int target){
-        int start = 0 ; 
-        int end = arr.size();
-        int i = end-1;
+        int col = arr[0].size(); 
+        int row = arr.size();
+        int i = row-1;
         int j = 0;
 
-        while(i>=0 && j<end){
+        while(i>=0 && j<=row){
             if (arr[i][j]== target){
                 cout<<"target present at index ";
                 return {i, j};
