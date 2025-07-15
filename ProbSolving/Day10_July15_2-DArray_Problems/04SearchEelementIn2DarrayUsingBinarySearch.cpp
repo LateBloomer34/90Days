@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// in case of binary search array must be sorted, if array not sorted binary search not applicable 
+
 pair<int , int> findElement(vector<vector<int>>arr, int target){
     int start = 0 ; 
     int end = arr.size()*arr[0].size()-1;
