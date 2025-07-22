@@ -1,0 +1,7 @@
+Attribute are the property of tag , 
+Attributes are the special keyword inside the opening tag which modify the behaviour or appearance of HTMl element.  thry provide the info about the element and are specified as key value pair inside the tag.
+
+
+attribute enhance the functunality and presentation of HTML element.
+
+
