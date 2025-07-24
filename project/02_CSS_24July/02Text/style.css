@@ -1,0 +1,29 @@
+#para{
+ 
+    background-color: pink;
+    text-decoration: dotted;
+    text-transform: capitalize;
+    line-height: 060px;
+    font-size: xx-large;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: small-caps;
+    font-display:swap;
+  font-family: "Bitcount Prop Single", cursive, system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
