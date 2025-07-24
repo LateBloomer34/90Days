@@ -1,0 +1,3 @@
+// central concept in CSS that outlines the design and layout of element on the web pages 
+
+component - margin, padding , border , content
