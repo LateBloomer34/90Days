@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky vs Fixed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fixed header: Always stays at the top */
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: crimson;
+      color: white;
+      padding: 10px;
+      z-index: 1000;
+    }
+
+    /* Sticky bar: sticks only when scrolled to */
+    .sticky-bar {
+      position: sticky;
+      top: 60px; /* sticks after the fixed bar */
+      background-color: orange;
+      color: black;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .box {
+      height: 800px;
+      background-color: #f2f2f2;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed-header">🔴 Fixed Header (Always on Top)</div>
+
+  <div class="sticky-bar">🟠 Sticky Bar (Sticks on Scroll)</div>
+
+  <div class="content">
+    <div class="box">Scroll down... (1)</div>
+    <div class="box">Keep scrolling... (2)</div>
+    <div class="box">Almost there... (3)</div>
+    <div class="box">Done! (4)</div>
+  </div>
+
+</body>
+</html>

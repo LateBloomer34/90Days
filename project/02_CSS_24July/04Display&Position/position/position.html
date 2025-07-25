@@ -1,0 +1,62 @@
+<!-- 
+ position in css-
+static (default) - (top left right bottom would not  z-index not work)
+relative - relative to its normal position
+absolute -  look for page corner, positioned reltive to its nearest position ancister
+fixed - element positioned relative to viewport, does not move on scroll
+sticky -  
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            display: inline-block;
+            /* position: relative; */
+        }
+        #first{
+           
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: azure;
+        }
+        #second{
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+            /* left: 20px; */
+        }
+        #third{
+            position: fixed;
+        }
+        #fourth{  
+            z-index: 1;
+            left: 100px;
+            top: 50px;
+            position: sticky;
+        }
+    </style>
+ </head>
+ <body>
+    <div id="main">
+        <div class="box" id="first">div1</div>
+        <div class="box" id="second">div2</div>
+        <div class="box" id="third">div3</div>
+        <div class="box" id="fourth">div4</div>
+    </div>
+ </body>
+ </html>
