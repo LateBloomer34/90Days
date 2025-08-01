@@ -9,3 +9,8 @@ important keyword -
 8- bundle - group of packages.
 9- CDN - content delivery network - CDN is newtwork of server which deliver content to user based on their location.
 10 -crossorigin - script on one domain trying to fetch or intrect with other domain's script.
+11- shortest program of JS - empty file
+12 - shortest program of React - injecting React file 
+13- what is create react app -  create-react-app is a tool provided by the React team to quickly set up a new React project without configuring Webpack, Babel.             i.e.  no need of npm init , npm install, no need to do this 
+14- React is a global object. React is a piece of JS code noting more than that, 
+15- why write ReactDOM- becuase of modifing the DOM, reading somthing from DOM.
