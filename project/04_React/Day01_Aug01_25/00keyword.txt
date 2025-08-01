@@ -16,3 +16,4 @@ important keyword -
 15- why write ReactDOM- becuase of modifing the DOM, reading somthing from DOM. responsibale for modification in DOM.
 16 - what is react element -  react element is just an JS object. 
 17- what does render do - takes react element and render it in DOM.
+18- wgat is root- root is the destination , where we want the modication, generally only 1 root element.
