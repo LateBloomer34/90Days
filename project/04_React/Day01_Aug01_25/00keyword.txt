@@ -1,0 +1,9 @@
+important keyword - 
+1- emmet - emment is a tool for devloper which help to write the code, basically it is a shoertcut of a batch of code.
+2- BoilerPlate - it is a prewritten, resulable piece of code, which can modify or use later.
+3- react -  react is a js library.react is not a freamwork, coz framework has its own architecture.
+4- framework -  group of library, which hav its own architcture.
+5- library -  group or combination of packages with different functionality.
+6- module - file of a code that consist a function or object or component. (one react file == one module)
+7- packages - group of module.
+8- bundle - group of packages
