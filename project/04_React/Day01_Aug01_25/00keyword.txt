@@ -12,5 +12,7 @@ important keyword -
 11- shortest program of JS - empty file
 12 - shortest program of React - injecting React file 
 13- what is create react app -  create-react-app is a tool provided by the React team to quickly set up a new React project without configuring Webpack, Babel.             i.e.  no need of npm init , npm install, no need to do this 
-14- React is a global object. React is a piece of JS code noting more than that, 
-15- why write ReactDOM- becuase of modifing the DOM, reading somthing from DOM.
+14- React - React is a global object. React is a piece of JS code noting more than that, 
+15- why write ReactDOM- becuase of modifing the DOM, reading somthing from DOM. responsibale for modification in DOM.
+16 - what is react element -  react element is just an JS object. 
+17- what does render do - takes react element and render it in DOM.
