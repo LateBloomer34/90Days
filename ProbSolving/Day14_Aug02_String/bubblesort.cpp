@@ -15,4 +15,15 @@ int main (){
     for (int i = 0 ; i < n ; i++){
         cout<< arr[i]<<" ";
     }
+
+    // convert integer into characters
+    // int a = 5;
+    // char b = 97+ char(a);
+    // cout<<"value of b is "<<b<<endl;
+
+
+    // convert character into integer
+    // char i = 'a';
+    // int l = int(i)-96;
+    // cout<<l<<" value of l";
 }
