@@ -9,8 +9,18 @@ int main (){
             // cout<<pos<<" "<<endl;
             arr[pos]++;
     }
-
+    
+    // in ascending dictionary order
     for (int i = 0 ; i < arr.size() ; i++){
+        if (arr[i]>0){ 
+            for (int j = 0 ; j < arr[i]; j++){
+                cout<<char('a'+i)<<"";
+            }
+        }
+    }
+cout<<endl;
+    // in reverse order
+     for (int i= arr.size()-1  ; i >= 0 ; i--){
         if (arr[i]>0){ 
             for (int j = 0 ; j < arr[i]; j++){
                 cout<<char('a'+i)<<"";
