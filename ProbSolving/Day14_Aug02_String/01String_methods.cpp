@@ -75,4 +75,7 @@ int main (){
     cout<<str[str.size()-1]<<endl;
     // method 2 
     cout<<str.back()<<endl;
+
+    // to check the size of string
+    cout<<"size of string is "<<str.size();
 }
