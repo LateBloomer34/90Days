@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem1</title>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>  
+    <div id="root">Not Rendered</div>
+
+    <!-- create structure like using React CDN
+    <div id="container">
+        <h1 id="first">Hello</h1>
+        <h2 id="second">Learer</h2>
+    </div> 
+    -->
+    
+    <script>
+    let first = React.createElement("h1", {id:"first"} , "Hello");
+    let second  = React.createElement("h2", {classNmae : "second"} , "learner");
+    let conatiner = React.createElement("div", {id:"container"}, [first, second, first]);
+
+    let destination = ReactDOM.createRoot(document.getElementById("root"));
+    destination.render(conatiner);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactUsingCDN</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ 
+</head>
+<body>
+   
+    <div id="root">Not Rendered</div>
+
+    <!-- hello react using JS -->
+<!-- <script>
+    let heading = document.createElement("h1");
+    heading.innerHTML = "hello JavaScript";
+    let destination = document.getElementById("root");
+    destination.appendChild(heading);  // update in older content or add with older content
+    // destination.replaceWith(heading); // replace/ overwrite all element or contect with new content
+</script> -->
+
+
+    <!-- using React CDN -->
+    <script>
+        // let element = React.createElement("h1", {className:"update"} , "Hello React");
+        let element = React.createElement("h1", null , "Hello React");
+        let destination = ReactDOM.createRoot(document.getElementById("root"));
+        destination.render(element); // render method replace new content over older.
+    </script>
+</body>
+</html>
