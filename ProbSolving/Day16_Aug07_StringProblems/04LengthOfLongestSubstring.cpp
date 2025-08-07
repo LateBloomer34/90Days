@@ -1,34 +1,32 @@
 #include<iostream>
 using namespace std;
 
-int substringLen(string s){
-        int maxLen = 1;
-        int n = s.size();
-// create a vector of 26 size with all value 0
-        vector<int>count(26 , 0);
+int subStr(string s){
+    int n = s.size();
+    // cerate a empty vector of 26 size to store frequnency of elements
+    vector<int>count(256 , 0);
+    // use 2 pointer
+    int first = 0 ;
+    int second = 1;
+    int maxLen = 0;
+    // let frequency of first element of string is one
+    count[s[first]-'a']=1;
 
-        // initilize 2 variabel 
-        int first = 0 ; 
-        int second = 1;
-    // update the index of first's element in count array; // means frequency update
-        count[s[first] - 'a']++;
-    
-
-        //iterate array till second is less than length of array
-        while(second<n){
-            while(count[s[second]-'a']){
-            count[s[first]-'a']=0;
+    // iterate till second is less than size of string
+    while(second<n){
+        while(count[s[second] - 'a']){    //  If character already in window, shrink from the left
+            count[s[first]-'a'] = 0;
             first++;
-            } 
-            count[s[second]-'a'] =1;
-            maxLen = max(maxLen , second-first+1);
-            second++;
         }
-    
-    return maxLen;
+      
+        count[s[second]-'a'] = 1; // mark second with 1
+        maxLen = max (maxLen , second-first+1);  // max length of substring
+        second++;  // increse second pointer till less thn size of array
+    }
+return maxLen;
 }
 
 int main (){
-    string s = "himanshu";
-   cout<< substringLen(s);
+    string s = "champawat";
+    cout<<subStr(s);
 }
