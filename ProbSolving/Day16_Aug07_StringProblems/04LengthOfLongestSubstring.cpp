@@ -15,6 +15,7 @@ int subStr(string s){
     // iterate till second is less than size of string
     while(second<n){
         while(count[s[second] - 'a']){    //  If character already in window, shrink from the left
+            // ex - if a character is avavilable or comes before, value updated qith 1 , so move first to right side
             count[s[first]-'a'] = 0;
             first++;
         }
