@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Practice 2</title>
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script>
+        let element1 = React.createElement("p" , {className:"first", key:"p1"} , "hello");
+        let element2 = React.createElement("p", {className:"second" , key:"p2"} , "world");
+        let element = React.createElement("h1" , {className:"ele"} , [element1, element2]);
+
+        let destination = ReactDOM.createRoot(document.getElementById("root"));
+
+        destination.render(element);
+
+    </script>
+</body>
+</html>
