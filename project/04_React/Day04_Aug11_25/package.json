@@ -1,0 +1,21 @@
+{
+  "name": "day04_aug11_25",
+  "version": "1.0.0",
+  "description": "\"Learning by Himanshu\"",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "himanshu",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserlist":[
+    "last 10 versions of chrome" ,
+    "last 10 version"
+  ]
+}
