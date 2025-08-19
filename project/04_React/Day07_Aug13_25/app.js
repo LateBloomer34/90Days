@@ -797,7 +797,7 @@ let restCard = [
 //       </div>
 // ); 
 
-const Rest = ( {restCar   })=>(
+const Rest = ( {restCar  })=>(
     console.log(restCard),
     <div className="restCard">
        <img className = "RestImage" src={restCar.info?.cloudinaryImageId}/>
